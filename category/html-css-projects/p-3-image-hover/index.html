@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text spin on mouse hover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="text-boxes">
+            <h2 class="heding">Mouse hover image effect</h2>
+
+            <iframe class="vid" width="660" height="371" src="https://www.youtube.com/embed/szylFY1rQaU" title="Text spin mouse hover effect from html and css @tutorialswithRamChaudhary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe class="vid" width="660" height="371" src="https://www.youtube.com/embed/4TJoMGwqm0M" title="Mouse image hover cool  effect only html and CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <a class="btn" href="">Youtube par dekhe</a>
+
+            <h2>Step by step copy and past code in your editer</h2>
+            <br>
+
+            <h1>Step 1:-</h1>
+            <p>Sabse pehle aap ek folder bnaiye. <strong>image hover</strong></p>
+            <p>Uske bad us folder ko aap code editer me opne krniye.</p>
+
+            <br>
+            <h1>Step 2:-</h1>
+            <p>Ab aap us folder me ek html ki file bnaiye. <strong>index.html</strong></p>
+            <p>Uske bad neeche diye huye code ko copy kr ke past kr dijiye.</p>
+
+            <br>
+            <h1>Step 3:-</h1>
+            <p>Ab aap jo aapne folder bnaya hai <strong>image hover</strong></p>
+            <p>usi me ek image rakhiyem <strong>img.jpg</strong></p>
+            <div class="text-box HTMLBox">
+                <div class="topic">HTML Code:</div>
+                <textarea id="HTMLBox" readonly>
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Image hover effect</title>
+                        <link rel="stylesheet" href="style.css">
+                    </head>
+                    
+                    <body>
+                        <div class="container">
+                            <div class="imagebox">
+                                <img src="img.jpg" alt="">
+                                <div class="textbox">
+                                    <h1>Image hover effect</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </body>
+                    
+                    </html>
+              </textarea>
+                <button id="HTMLButton">Copy Codes</button>
+            </div>
+            <div class="text-box CSSBox">
+                <h1>Step 4:-</h1>
+                <p>Uske bad CSS ki file bnaiye <strong>style.css</strong></p>
+                <p>css code ko copy ke usme past kr dijiye.</p>
+                <div class="topic">CSS Code:</div>
+                <textarea id="CSSBox" readonly>
+                    body {
+                        background: #003444;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    .container {
+                        margin: 100px auto;
+                        width: 600px;
+                    }
+                    
+                    .imagebox {
+                        cursor: pointer;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    
+                    .imagebox img {
+                        width: 100%;
+                        transition: .5s;
+                    }
+                    
+                    .textbox {
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(255, 0, 0, .9);
+                        transition: .5s;
+                    }
+                    
+                    .textbox h1 {
+                        margin: 0;
+                        padding: 0;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: #fff;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    
+                    .imagebox:hover .textbox {
+                        left: 0;
+                    }
+                    
+                    .imagebox:hover img {
+                        transform: scale(1.2);
+                    }
+              </textarea>
+                <button id="CSSButton">Copy Codes</button>
+            </div>
+            <div style="margin-top: 170px; margin-bottom: 10px; ">
+                <h1 style="padding: 5px;">Output Demo:-</h1>
+                <video style="width: 90vw; " controls muted src="demo.mp4"></video>
+            </div>
+
+            <h3 style="margin: 10px;">copyright &copy; &And; Make by Ram Chaudhary</h3>
+
+            <!-- <div class="text-box JSBox">
+                <div class="topic">JavaScript Code:</div>
+                <textarea id="JSBox" readonly>
+                Add JavaScript Code here
+              </textarea>
+                <button id="JSButton">Copy Codes</button>
+            </div> -->
+        </div>
+
+        <script>
+            // HTML BOx JS Code
+            let HTMLBox = document.getElementById("HTMLBox");
+            let HTMLButton = document.getElementById("HTMLButton");
+
+            HTMLButton.onclick = function() {
+                HTMLBox.select();
+                document.execCommand("copy");
+                HTMLButton.innerText = "Codes Copied"
+            }
+
+            // CSS Box Js Code
+            let CSSBox = document.getElementById("CSSBox");
+            let CSSButton = document.getElementById("CSSButton");
+
+            CSSButton.onclick = function() {
+                    CSSBox.select();
+                    document.execCommand("copy");
+                    CSSButton.innerText = "Codes Copied"
+                }
+                // JavaScript BOx JS Code
+            let JSBox = document.getElementById("JSBox");
+            let JSButton = document.getElementById("JSButton");
+
+            // JSButton.onclick = function() {
+            //     JSBox.select();
+            //     document.execCommand("copy");
+            //     JSButton.innerText = "Codes Copied"
+            // }
+        </script>
+    </div>
+
+
+</body>
+
+</html>
