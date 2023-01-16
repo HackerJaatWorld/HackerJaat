@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup icons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="text-boxes">
+            <h2 class="heding">Mouse hover Popup icons</h2>
+
+
+            <iframe class="vid" width="660" height="371" src="https://www.youtube.com/embed/R5EW7W92YeQ" title="Skew Mouse hover test skew effect only html and CSS #html #css #coding #website #lernen #tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <a class="btn" href="">Youtube par dekhe</a>
+
+            <h2>Step by step copy and past code in your editer</h2>
+            <br>
+
+            <h1>Step 1:-</h1>
+            <p>Sabse pehle aap ek folder bnaiye. <strong>popup icon</strong></p>
+            <p>Uske bad us folder ko aap code editer me opne krniye.</p>
+
+            <br>
+            <h1>Step 2:-</h1>
+            <p>Ab aap us folder me ek html ki file bnaiye. <strong>index.html</strong></p>
+            <p>Uske bad neeche diye huye code ko copy kr ke past kr dijiye.</p>
+
+
+            <div class="text-box HTMLBox">
+                <div class="topic">HTML Code:</div>
+                <textarea id="HTMLBox" readonly>
+                    <!DOCTYPE html>
+                            <html lang="en">
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>PopUp icons</title>
+                                <link rel="stylesheet" href="style.css">
+                            </head>
+
+                            <body>
+                                <div class="box">
+                                    <img src="your icon" alt="">
+                                    <img src="your icon" alt="">
+                                    <img src="your icon" alt="">
+                                   
+                                </div>
+                            </body>
+
+                            </html>
+              </textarea>
+                <button id="HTMLButton">Copy Codes</button>
+            </div>
+            <div class="text-box CSSBox">
+                <h1>Step 4:-</h1>
+                <p>Uske bad CSS ki file bnaiye <strong>style.css</strong></p>
+                <p>css code ko copy ke usme past kr dijiye.</p>
+                <div class="topic">CSS Code:</div>
+                <textarea id="CSSBox" readonly>
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        background: black;
+                    }
+                    
+                    .box {
+                        width: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 80%;
+                        transform: translate(-50%, -50%);
+                    }
+                    
+                    .box img {
+                        position: relative;
+                        border-radius: 100%;
+                        padding: 2px;
+                        margin: 15px;
+                        width: 100px;
+                        transition: 0.5s;
+                        cursor: pointer;
+                        border: 2px solid #fff;
+                    }
+                    
+                    .box img:hover {
+                        transform: translateY(-17px);
+                        box-shadow: 0px 0px 10px 5px yellow;
+                    }
+              </textarea>
+                <button id="CSSButton">Copy Codes</button>
+            </div>
+            <div style="margin-top: 170px; margin-bottom: 10px; ">
+                <h1 style="padding: 5px;">Output Demo:-</h1>
+                <video style="width: 90vw; " controls muted src="demo.mp4"></video>
+            </div>
+
+            <h3 style="margin: 10px;">copyright &copy; &And; Make by Ram Chaudhary</h3>
+
+            <!-- <div class="text-box JSBox">
+                <div class="topic">JavaScript Code:</div>
+                <textarea id="JSBox" readonly>
+                Add JavaScript Code here
+              </textarea>
+                <button id="JSButton">Copy Codes</button>
+            </div> -->
+        </div>
+
+        <script>
+            // HTML BOx JS Code
+            let HTMLBox = document.getElementById("HTMLBox");
+            let HTMLButton = document.getElementById("HTMLButton");
+
+            HTMLButton.onclick = function() {
+                HTMLBox.select();
+                document.execCommand("copy");
+                HTMLButton.innerText = "Codes Copied"
+            }
+
+            // CSS Box Js Code
+            let CSSBox = document.getElementById("CSSBox");
+            let CSSButton = document.getElementById("CSSButton");
+
+            CSSButton.onclick = function() {
+                    CSSBox.select();
+                    document.execCommand("copy");
+                    CSSButton.innerText = "Codes Copied"
+                }
+                // JavaScript BOx JS Code
+            let JSBox = document.getElementById("JSBox");
+            let JSButton = document.getElementById("JSButton");
+
+            // JSButton.onclick = function() {
+            //     JSBox.select();
+            //     document.execCommand("copy");
+            //     JSButton.innerText = "Codes Copied"
+            // }
+        </script>
+    </div>
+
+
+</body>
+
+</html>
