@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing loading page </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="text-boxes">
+            <h2 class="heding">Amazing Loading Page Only HTML and CSS</h2>
+            <iframe width="704" height="396" src="https://www.youtube.com/embed/1jRyjZXcNHc" title="Amazing Loading effect only html & CSS #coding #html #css #tutorial @tutorialswithRamChaudhary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <a class="btn" href="https://www.youtube.com/embed/1jRyjZXcNHc">Youtube par dekhe</a>
+
+            <h2>Step by step copy and past code in your editer</h2>
+            <br>
+
+            <h1>Step 1:-</h1>
+            <p>Sabse pehle aap ek folder bnaiye. <strong>Loading page</strong></p>
+            <p>Uske bad us folder ko aap code editer me opne krniye.</p>
+
+            <br>
+            <h1>Step 2:-</h1>
+            <p>Ab aap us folder me ek html ki file bnaiye. <strong>index.html</strong></p>
+            <p>Uske bad neeche diye huye code ko copy kr ke past kr dijiye.</p>
+            <div class="text-box HTMLBox">
+                <div class="topic">HTML Code:</div>
+                <textarea id="HTMLBox" readonly>
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Loading Page</title>
+                        <link rel="stylesheet" href="style.css">
+                    </head>
+                    
+                    <body>
+                        <div class="container loader">
+                            <span>L</span>
+                            <span>O</span>
+                            <span>A</span>
+                            <span>D</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>G</span>
+                        </div>
+                    </body>
+                    
+                    </html>
+              </textarea>
+                <button id="HTMLButton">Copy Codes</button>
+            </div>
+            <div class="text-box CSSBox">
+                <h1>Step 3:-</h1>
+                <p>Uske bad CSS ki file bnaiye <strong>style.css</strong></p>
+                <p>css code ko copy kr ke usme past kr dijiye.</p>
+                <div class="topic">CSS Code:</div>
+                <textarea id="CSSBox" readonly>
+                    body {
+                        background: #2b2b2b;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    .loader {
+                        height: 40px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    
+                    .loader span {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 54px;
+                        color: rgba(255, 255, 255, .1);
+                        display: inline-block;
+                        transition: all .5s;
+                        animation: animation 2s infinite;
+                    }
+                    
+                    .loader span:nth-child(1) {
+                        animation-delay: .1s;
+                    }
+                    
+                    .loader span:nth-child(2) {
+                        animation-delay: .2s;
+                    }
+                    
+                    .loader span:nth-child(3) {
+                        animation-delay: .3s;
+                    }
+                    
+                    .loader span:nth-child(4) {
+                        animation-delay: .4s;
+                    }
+                    
+                    .loader span:nth-child(5) {
+                        animation-delay: .5s;
+                    }
+                    
+                    .loader span:nth-child(6) {
+                        animation-delay: .6s;
+                    }
+                    
+                    .loader span:nth-child(7) {
+                        animation-delay: .7s;
+                    }
+                    
+                    @keyframes animation {
+                        0% {
+                            color: rgba(255, 255, 255, .1);
+                            transform: translateY(0);
+                            margin-left: 0;
+                        }
+                        25% {
+                            color: yellow;
+                            transform: translateY(-15px);
+                            margin-left: 10px;
+                            text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
+                        }
+                        100% {
+                            color: rgba(255, 255, 255, .1);
+                            transform: translateY(0);
+                        }
+                    }
+              </textarea>
+                <button id="CSSButton">Copy Codes</button>
+            </div>
+            <div style="margin-top: 170px; margin-bottom: 10px; ">
+                <h1 style="padding: 5px;">Output Demo:-</h1>
+                <video style="width: 90vw; " controls muted src="demo.mp4"></video>
+            </div>
+
+            <h3 style="margin: 10px;">copyright &copy; &And; Make by Ram Chaudhary</h3>
+
+            <!-- <div class="text-box JSBox">
+                <div class="topic">JavaScript Code:</div>
+                <textarea id="JSBox" readonly>
+                Add JavaScript Code here
+              </textarea>
+                <button id="JSButton">Copy Codes</button>
+            </div> -->
+        </div>
+
+        <script>
+            // HTML BOx JS Code
+            let HTMLBox = document.getElementById("HTMLBox");
+            let HTMLButton = document.getElementById("HTMLButton");
+
+            HTMLButton.onclick = function() {
+                HTMLBox.select();
+                document.execCommand("copy");
+                HTMLButton.innerText = "Codes Copied"
+            }
+
+            // CSS Box Js Code
+            let CSSBox = document.getElementById("CSSBox");
+            let CSSButton = document.getElementById("CSSButton");
+
+            CSSButton.onclick = function() {
+                    CSSBox.select();
+                    document.execCommand("copy");
+                    CSSButton.innerText = "Codes Copied"
+                }
+                // JavaScript BOx JS Code
+            let JSBox = document.getElementById("JSBox");
+            let JSButton = document.getElementById("JSButton");
+
+            // JSButton.onclick = function() {
+            //     JSBox.select();
+            //     document.execCommand("copy");
+            //     JSButton.innerText = "Codes Copied"
+            // }
+        </script>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text spin on mouse hover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="text-boxes">
+            <h2 class="heding">Online and offline indicator html and JavaScript</h2>
+
+
+            <!-- <iframe class="vid" width="660" height="371"" title="Skew Mouse hover test skew effect only html and CSS #html #css #coding #website #lernen #tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
+            allowfullscreen></iframe>
+
+            <a class="btn" href="https://youtu.be/z1FuqaFyUjs">Youtube par dekhe</a>
+
+            <h2>Step by step copy and past code in your editer</h2>
+            <br>
+
+            <h1>Step 1:-</h1>
+            <p>Sabse pehle aap ek folder bnaiye. <strong>indicator</strong></p>
+            <p>Uske bad us folder ko aap code editer me opne krniye.</p>
+
+            <br>
+            <h1>Step 2:-</h1>
+            <p>Ab aap us folder me ek html ki file bnaiye. <strong>index.html</strong></p>
+            <p>Uske bad neeche diye huye code ko copy kr ke past kr dijiye.</p>
+
+
+            <div class="text-box HTMLBox">
+                <div class="topic">HTML Code:</div>
+                <textarea id="HTMLBox" readonly>
+                    <!DOCTYPE html>
+                            <html lang="en">
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>online and offline</title>
+
+                                <script>
+                                    function update() {
+                                        document.getElementById('show').textContent = navigator.onLine ? 'online' : 'offline';
+                                    }
+                                </script>
+                                <style>
+                                    #show {
+                                        position: absolute;
+                                        top: 40%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        font-size: 100px;
+                                    }
+                                </style>
+                            </head>
+
+                            <body onload="update()" ononline="update()" onoffline="update()">
+                                <h1>Show user online and offline</h1>
+                                <p id="show"> check</p>
+                            </body>
+
+                            </html>
+              </textarea>
+                <button id="HTMLButton">Copy Codes</button>
+            </div>
+
+            <div style="margin-top: 170px; margin-bottom: 10px; ">
+                <h1 style="padding: 5px;">Output Demo:-</h1>
+                <video style="width: 90vw; " controls muted src="demo.mp4"></video>
+            </div>
+
+            <h3 style="margin: 10px;">copyright &copy; &And; Make by Ram Chaudhary</h3>
+
+            <!-- <div class="text-box JSBox">
+                <div class="topic">JavaScript Code:</div>
+                <textarea id="JSBox" readonly>
+                Add JavaScript Code here
+              </textarea>
+                <button id="JSButton">Copy Codes</button>
+            </div> -->
+        </div>
+
+        <script>
+            // HTML BOx JS Code
+            let HTMLBox = document.getElementById("HTMLBox");
+            let HTMLButton = document.getElementById("HTMLButton");
+
+            HTMLButton.onclick = function() {
+                HTMLBox.select();
+                document.execCommand("copy");
+                HTMLButton.innerText = "Codes Copied"
+            }
+
+            // CSS Box Js Code
+            let CSSBox = document.getElementById("CSSBox");
+            let CSSButton = document.getElementById("CSSButton");
+
+            CSSButton.onclick = function() {
+                    CSSBox.select();
+                    document.execCommand("copy");
+                    CSSButton.innerText = "Codes Copied"
+                }
+                // JavaScript BOx JS Code
+            let JSBox = document.getElementById("JSBox");
+            let JSButton = document.getElementById("JSButton");
+
+            // JSButton.onclick = function() {
+            //     JSBox.select();
+            //     document.execCommand("copy");
+            //     JSButton.innerText = "Codes Copied"
+            // }
+        </script>
+    </div>
+
+
+</body>
+
+</html>
