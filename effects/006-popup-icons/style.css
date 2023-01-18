@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.box {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.box img {
+    position: relative;
+    border-radius: 100%;
+    padding: 2px;
+    margin: 15px;
+    width: 100px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.box img:hover {
+    transform: translateY(-17px);
+    box-shadow: 0px 0px 10px 5px yellow;
+}
