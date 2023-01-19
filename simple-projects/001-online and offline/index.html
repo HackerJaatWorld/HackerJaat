@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online and offline</title>
+
+    <script>
+        function update() {
+            document.getElementById('show').textContent = navigator.onLine ? 'online' : 'offline';
+        }
+    </script>
+    <style>
+        #show {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body onload="update()" ononline="update()" onoffline="update()">
+    <h1>Show user online and offline</h1>
+    <p id="show"> check</p>
+</body>
+
+</html>
