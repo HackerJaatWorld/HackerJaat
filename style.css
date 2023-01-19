@@ -138,19 +138,24 @@ nav ul.active {
     opacity: 1;
 }
 
-.box div a {
-    text-decoration: none;
-    color: black;
-    border: 2px solid #ffffff;
-    padding: 10px;
-    position: relative;
-    top: 90px;
-    left: 40px;
-    margin: 15px;
-    border-radius: 10px;
-    background: #ffffff;
-    transition: .5s;
-}
+.box div:hover a {
+        top: 90px;
+        left: 40px;
+    }
+    
+    .box div a {
+        text-decoration: none;
+        color: black;
+        border: 2px solid #ffffff;
+        padding: 10px;
+        position: relative;
+        top: 1000px;
+        left: 40px;
+        margin: 15px;
+        border-radius: 10px;
+        background: #ffffff;
+        transition: .5s;
+    }
 
 .box div a:hover {
     background: yellow;
@@ -221,6 +226,14 @@ nav ul.active {
         height: 200px;
         padding: 5px;
     }
+    .box div a {
+            top: 1000px;
+            left: 40px;
+        }
+        .box div:hover a {
+            top: 30%;
+            left: 15%;
+        }
 }
 
 @media only screen and (max-width: 767px) {
@@ -280,6 +293,14 @@ nav ul.active {
         height: 200px;
         padding: 5px;
     }
+    .box div a {
+            top: 1000px;
+            left: 40px;
+        }
+        .box div:hover a {
+            top: 30%;
+            left: 15%;
+        }
 }
 
 @media only screen and (max-width: 575px) {
@@ -324,4 +345,12 @@ nav ul.active {
         height: 200px;
         padding: 5px;
     }
+    .box div a {
+            top: 1000px;
+            left: 40px;
+        }
+        .box div:hover a {
+            top: 30%;
+            left: 15%;
+        }
 }
