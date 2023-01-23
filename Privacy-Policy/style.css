@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, lightblue, lightgreen);
+    font-family: "Courier New", Courier, monospace;
+}
+
+#home {
+    border: 2px solid black;
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 1%;
+}
