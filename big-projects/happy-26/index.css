@@ -1,0 +1,1249 @@
+ body {
+     background-color: black;
+     animation: body 0s ease 11s;
+     animation-fill-mode: forwards;
+     overflow: hidden;
+ }
+ /* @keyframes body {
+     to {
+         background: #fff;
+     }
+ } */
+ 
+ .connect {
+     display: flex;
+     color: #fff;
+     justify-content: center;
+     position: absolute;
+     top: 0%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     animation: connect 0s ease 4s;
+     animation-fill-mode: forwards;
+     visibility: hidden;
+ }
+ 
+ @keyframes connect {
+     to {
+         visibility: inherit;
+     }
+ }
+ 
+ .connect h1 {
+     font-size: 50px;
+ }
+ 
+ .connect h1:nth-child(11) {
+     animation-name: con1;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-duration: 1s;
+ }
+ 
+ @keyframes con1 {
+     0% {
+         color: #fff;
+     }
+     100% {
+         color: black;
+     }
+ }
+ 
+ .connect h1:nth-child(12) {
+     animation-name: con2;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-duration: 1s;
+ }
+ 
+ @keyframes con2 {
+     0% {
+         color: #fff;
+     }
+     100% {
+         color: black;
+     }
+ }
+ 
+ .connect h1:nth-child(13) {
+     animation-name: con3;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-duration: 1s;
+     animation-delay: .2s;
+ }
+ 
+ @keyframes con3 {
+     0% {
+         color: #fff;
+     }
+     100% {
+         color: black;
+     }
+ }
+ 
+ .connect h1:nth-child(14) {
+     animation-name: con4;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-duration: 1s;
+     animation-delay: .3s;
+ }
+ 
+ @keyframes con4 {
+     0% {
+         color: #fff;
+     }
+     100% {
+         color: black;
+     }
+ }
+ 
+ .connect h1:nth-child(15) {
+     animation-name: con5;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-duration: 1s;
+     animation-delay: .4s;
+ }
+ 
+ @keyframes con5 {
+     0% {
+         color: #fff;
+     }
+     100% {
+         color: black;
+     }
+ }
+ 
+ .box {
+     width: 300px;
+     height: 300px;
+     border: 2px solid black;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background: black;
+     animation: box 0s ease 10s;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes box {
+     to {
+         visibility: hidden;
+         width: 0;
+         height: 0;
+     }
+ }
+ 
+ .circle {
+     width: 200px;
+     height: 200px;
+     border: 1px solid black;
+     position: absolute;
+     top: 16.5%;
+     left: 16.5%;
+     transform: translate(-50%, -50%);
+     background: linear-gradient(blue, yellow, red);
+     animation-name: gol;
+     animation-timing-function: ease-in-out;
+     animation-duration: 4s;
+     animation-direction: alternate-reverse;
+     animation-iteration-count: infinite;
+     border-radius: 100%;
+ }
+ 
+ @keyframes gol {
+     0% {
+         transform: rotate(0deg);
+     }
+     100% {
+         transform: rotate(2000deg);
+     }
+ }
+ 
+ .center {
+     width: 180px;
+     height: 180px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background: black;
+     border-radius: 100%;
+ }
+ 
+ .center h2 {
+     color: #fff;
+     position: absolute;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: flex;
+ }
+ 
+ .center h2 span:nth-child(1) {
+     animation-name: dot1;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-duration: 1s;
+ }
+ 
+ @keyframes dot1 {
+     0% {
+         color: #fff;
+     }
+     100% {
+         color: black;
+     }
+ }
+ 
+ .center h2 span:nth-child(2) {
+     animation-name: dot2;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-duration: 1s;
+     animation-delay: .1s;
+ }
+ 
+ @keyframes dot2 {
+     0% {
+         color: #fff;
+     }
+     100% {
+         color: black;
+     }
+ }
+ 
+ .center h2 span:nth-child(3) {
+     animation-name: dot3;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-duration: 1s;
+     animation-delay: .2s;
+ }
+ 
+ @keyframes dot3 {
+     0% {
+         color: #fff;
+     }
+     100% {
+         color: black;
+     }
+ }
+ 
+ .center h2 span:nth-child(4) {
+     animation-name: dot4;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-duration: 1s;
+     animation-delay: .3s;
+ }
+ 
+ @keyframes dot4 {
+     0% {
+         color: #fff;
+     }
+     100% {
+         color: black;
+     }
+ }
+ 
+ .count {
+     width: 70px;
+     height: 70px;
+     overflow: hidden;
+     border: 1px solid black;
+     position: absolute;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     border-radius: 100%;
+ }
+ 
+ .count h1 {
+     font-size: 70px;
+     padding: 0;
+     margin: 0;
+     transform: translateY(0px);
+     animation-name: num;
+     animation-timing-function: ease-in-out;
+     animation-duration: 10s;
+     animation-iteration-count: 1;
+     color: yellow;
+ }
+ 
+ @keyframes num {
+     0% {
+         transform: translateY(0px);
+         display: block;
+     }
+     10% {
+         transform: translateY(-80px);
+     }
+     20% {
+         transform: translateY(-160px);
+     }
+     30% {
+         transform: translateY(-240px);
+     }
+     40% {
+         transform: translateY(-320px);
+     }
+     50% {
+         transform: translateY(-400px);
+     }
+     60% {
+         transform: translateY(-480px);
+     }
+     70% {
+         transform: translateY(-560px);
+     }
+     80% {
+         transform: translateY(-640px);
+     }
+     90% {
+         transform: translateY(-720px);
+     }
+     100% {
+         transform: translateY(-800px);
+     }
+ }
+ 
+ .container {
+     width: 500px;
+     height: 200px;
+     /* border: 2px solid #fff; */
+     position: absolute;
+     top: 80%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-evenly;
+     align-items: center;
+     overflow: hidden;
+     animation: box 0s ease 10s;
+     animation-fill-mode: forwards;
+ }
+ 
+ .container div {
+     width: 30px;
+     height: 30px;
+     border: 1px solid #fff;
+     background: yellow;
+     border-radius: 100%;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate-reverse;
+     animation-timing-function: ease-in-out;
+     animation-fill-mode: both;
+ }
+ 
+ .container div:nth-child(1) {
+     animation-name: gol1;
+ }
+ 
+ .container div:nth-child(2) {
+     animation-name: gol2;
+     animation-delay: .1s;
+ }
+ 
+ .container div:nth-child(3) {
+     animation-name: gol3;
+     animation-delay: .2s;
+ }
+ 
+ .container div:nth-child(4) {
+     animation-name: gol4;
+     animation-delay: .3s;
+ }
+ 
+ .container div:nth-child(5) {
+     animation-name: gol5;
+     animation-delay: .4s;
+ }
+ 
+ .container div:nth-child(6) {
+     animation-name: gol6;
+     animation-delay: .5s;
+ }
+ 
+ .container div:nth-child(7) {
+     animation-name: gol7;
+     animation-delay: .6s;
+ }
+ 
+ .container div:nth-child(8) {
+     animation-name: gol8;
+     animation-delay: .7s;
+ }
+ 
+ .container div:nth-child(9) {
+     animation-name: gol9;
+     animation-delay: .8s;
+ }
+ 
+ .container div:nth-child(10) {
+     animation-name: gol10;
+     animation-delay: .9s;
+ }
+ 
+ @keyframes gol1 {
+     0% {
+         transform: translateY(0px);
+     }
+     100% {
+         transform: translateY(-30px);
+     }
+ }
+ 
+ @keyframes gol2 {
+     0% {
+         transform: translateY(0px);
+     }
+     100% {
+         transform: translateY(-60px);
+     }
+ }
+ 
+ @keyframes gol3 {
+     0% {
+         transform: translateY(0px);
+     }
+     100% {
+         transform: translateY(-30px);
+     }
+ }
+ 
+ @keyframes gol4 {
+     0% {
+         transform: translateY(0px);
+     }
+     100% {
+         transform: translateY(-60px);
+     }
+ }
+ 
+ @keyframes gol5 {
+     0% {
+         transform: translateY(0px);
+     }
+     100% {
+         transform: translateY(-30px);
+     }
+ }
+ 
+ @keyframes gol6 {
+     0% {
+         transform: translateY(0px);
+     }
+     100% {
+         transform: translateY(-60px);
+     }
+ }
+ 
+ @keyframes gol7 {
+     0% {
+         transform: translateY(0px);
+     }
+     100% {
+         transform: translateY(-30px);
+     }
+ }
+ 
+ @keyframes gol8 {
+     0% {
+         transform: translateY(0px);
+     }
+     100% {
+         transform: translateY(-60px);
+     }
+ }
+ 
+ @keyframes gol9 {
+     0% {
+         transform: translateY(0px);
+     }
+     100% {
+         transform: translateY(-30px);
+     }
+ }
+ 
+ @keyframes gol10 {
+     0% {
+         transform: translateY(0px);
+     }
+     100% {
+         transform: translateY(-60px);
+     }
+ }
+ /* =========================flag====================== */
+ 
+ .main {
+     visibility: hidden;
+ }
+ 
+ .btn {
+     animation: btn 0s ease 11s;
+     animation-fill-mode: forwards;
+     visibility: hidden;
+     position: absolute;
+     top: 80%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: #fff;
+     padding: 20px;
+     border: 2px solid #fff;
+     border-radius: 10px;
+     background: black;
+     cursor: pointer;
+ }
+ 
+ .btn:hover {
+     background-color: yellow;
+     color: black;
+ }
+ 
+ @keyframes btn {
+     to {
+         visibility: inherit;
+     }
+ }
+ 
+ .flag {
+     margin: 30px auto;
+     position: relative;
+     width: 250px;
+     height: 150px;
+     -webkit-perspective: 1000;
+     -webkit-transform-style: preserve3d;
+     -webkit-transform-origin: 0 250px;
+     -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(-22deg);
+     -webkit-animation-name: wave;
+     -webkit-animation-duration: 8s;
+     -webkit-animation-timing-function: cubic-bezier(0.16, 0.14, 0.82, 0.73);
+     -webkit-animation-timing-function: linear;
+     -webkit-animation-iteration-count: infinite;
+     perspective: 1000;
+     transform-style: preserve3d;
+     transform-origin: 0 250px;
+     transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(-22deg);
+     animation-name: wave;
+     animation-duration: 8s;
+     animation-timing-function: cubic-bezier(0.16, 0.14, 0.82, 0.73);
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+ }
+ 
+ .flag:before {
+     position: absolute;
+     content: "";
+     height: 400px;
+     left: -1px;
+     top: 1px;
+     width: 8px;
+     border-right: 1px solid #FFF;
+     border-radius: 3px;
+     background-color: #422;
+     box-shadow: -3px 3px 8px 0px rgba(0, 0, 0, 0.4);
+ }
+ 
+ .white {
+     background: #FFF;
+ }
+ 
+ .green {
+     background: #006400;
+ }
+ 
+ .saffron {
+     background: #F93;
+ }
+ 
+ .flag-item {
+     height: 33.33%;
+     box-sizing: border-box;
+ }
+ 
+ .flag-wave {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image: -webkit-gradient(linear, 0 -25%, 100% top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0)), color-stop(30%, rgba(0, 0, 0, 0.04)), color-stop(40%, rgba(255, 255, 255, 0.2)), color-stop(60%, rgba(255, 255, 255, 0)), color-stop(65%, rgba(255, 255, 255, 0.2)), color-stop(80%, rgba(0, 0, 0, 0.05)), color-stop(100%, rgba(255, 255, 255, 0)));
+     background-size: 200%;
+     -webkit-animation-name: air;
+     -webkit-animation-duration: 8s;
+     -webkit-animation-timing-function: cubic-bezier(0.16, 0.14, 0.82, 0.73);
+     -webkit-animation-iteration-count: infinite;
+ }
+ 
+ .wheel {
+     width: 47px;
+     height: 47px;
+     border: 2px solid #000080;
+     border-radius: 50%;
+     position: absolute;
+     left: 40%;
+     -webkit-animation: circle 5s infinite;
+     animation: circle 10s linear 2s infinite;
+ }
+ 
+ .wheel:after {
+     content: "";
+     width: 3px;
+     height: 3px;
+     border-radius: 50%;
+     background: #000080;
+     position: absolute;
+     top: 45%;
+     left: 45%;
+ }
+ 
+ .bar {
+     position: absolute;
+     display: inline-block;
+     height: 47px;
+     width: 2px;
+     background: #000080;
+     left: 47%;
+ }
+ 
+ .bar:nth-child(1) {
+     -ms-transform: rotate(15deg);
+     -webkit-transform: rotate(15deg);
+     transform: rotate(15deg);
+ }
+ 
+ .bar:nth-child(2) {
+     -ms-transform: rotate(30deg);
+     -webkit-transform: rotate(30deg);
+     transform: rotate(30deg);
+ }
+ 
+ .bar:nth-child(3) {
+     -ms-transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
+     transform: rotate(45deg);
+ }
+ 
+ .bar:nth-child(4) {
+     -ms-transform: rotate(60deg);
+     -webkit-transform: rotate(60deg);
+     transform: rotate(60deg);
+ }
+ 
+ .bar:nth-child(5) {
+     -ms-transform: rotate(75deg);
+     -webkit-transform: rotate(75deg);
+     transform: rotate(75deg);
+ }
+ 
+ .bar:nth-child(6) {
+     -ms-transform: rotate(90deg);
+     -webkit-transform: rotate(90deg);
+     transform: rotate(90deg);
+ }
+ 
+ .bar:nth-child(7) {
+     -ms-transform: rotate(105deg);
+     -webkit-transform: rotate(105deg);
+     transform: rotate(105deg);
+ }
+ 
+ .bar:nth-child(8) {
+     -ms-transform: rotate(120deg);
+     -webkit-transform: rotate(120deg);
+     transform: rotate(120deg);
+ }
+ 
+ .bar:nth-child(9) {
+     -ms-transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+     transform: rotate(135deg);
+ }
+ 
+ .bar:nth-child(10) {
+     -ms-transform: rotate(150deg);
+     -webkit-transform: rotate(150deg);
+     transform: rotate(150deg);
+ }
+ 
+ .bar:nth-child(11) {
+     -ms-transform: rotate(165deg);
+     -webkit-transform: rotate(165deg);
+     transform: rotate(165deg);
+ }
+ 
+ @-webkit-keyframes circle {
+     from {
+         -ms-transform: rotate(0deg);
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+     }
+     to {
+         -ms-transform: rotate(360deg);
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+     }
+ }
+ 
+ @-webkit-keyframes wave {
+     0% {
+         box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.1);
+         -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(22deg);
+     }
+     20% {
+         box-shadow: 4px 5px 15px 0 rgba(0, 0, 0, 0.1);
+         -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(0deg);
+     }
+     40% {
+         box-shadow: 4px 5px 20px 0 rgba(0, 0, 0, 0.4);
+         -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(-22deg);
+     }
+     60% {
+         box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.1);
+         -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(0deg);
+     }
+     80% {
+         box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.3);
+         -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(16deg);
+     }
+     100% {
+         box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.1);
+         -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(22deg);
+     }
+ }
+ 
+ @-webkit-keyframes air {
+     0% {
+         background-position: -200% 0px;
+     }
+     30% {
+         background-position: -60% 5px;
+     }
+     70% {
+         background-position: 70% -5px;
+     }
+     100% {
+         background-position: 200% 0px;
+     }
+ }
+ 
+ .info {
+     text-align: center;
+     margin-top: 320px;
+ }
+ 
+ .info a {
+     text-decoration: none;
+     font-size: 20px;
+     color: #f4645f;
+     font-weight: 700;
+ }
+ /* .last-page audio {
+     animation: video 0s ease 11s;
+     animation-fill-mode: forwards;
+     visibility: hidden;
+ }
+ 
+ @keyframes audio {
+     to {
+         visibility: inherit;
+     }
+ } */
+ 
+ .heading {
+     position: absolute;
+     top: 70%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 60px;
+     text-shadow: 0px 5px 5px #fff;
+ }
+ 
+ .stars {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+     height: 99%;
+ }
+ 
+ .stars .star {
+     width: 20px;
+     height: 20px;
+     background-color: #fff;
+     position: absolute;
+     transform: translate(-50%, -50%);
+ }
+ 
+ .stars .star:nth-child(1) {
+     top: -5%;
+     left: 190%;
+     animation-name: star1;
+     animation-duration: 5s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .20s;
+ }
+ 
+ @keyframes star1 {
+     to {
+         top: 99%;
+         left: 99%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(2) {
+     top: -5%;
+     left: 180%;
+     animation-name: star2;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .19s;
+ }
+ 
+ @keyframes star2 {
+     to {
+         top: 99%;
+         left: 95%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(3) {
+     top: -5%;
+     left: 170%;
+     animation-name: star3;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .4s;
+ }
+ 
+ @keyframes star3 {
+     to {
+         top: 99%;
+         left: 90%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(4) {
+     top: -5%;
+     left: 160%;
+     animation-name: star4;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .7s;
+ }
+ 
+ @keyframes star2 {
+     to {
+         top: 99%;
+         left: 85%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(5) {
+     top: -5%;
+     left: 150%;
+     animation-name: star5;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .1s;
+ }
+ 
+ @keyframes star5 {
+     to {
+         top: 99%;
+         left: 80%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(6) {
+     top: -5%;
+     left: 140%;
+     animation-name: star6;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .8s;
+ }
+ 
+ @keyframes star6 {
+     to {
+         top: 99%;
+         left: 75%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(7) {
+     top: -5%;
+     left: 130%;
+     animation-name: star7;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .3s;
+ }
+ 
+ @keyframes star7 {
+     to {
+         top: 99%;
+         left: 70%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(8) {
+     top: -5%;
+     left: 120%;
+     animation-name: star8;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .7s;
+ }
+ 
+ @keyframes star8 {
+     to {
+         top: 99%;
+         left: 65%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(9) {
+     top: -5%;
+     left: 110%;
+     animation-name: star9;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .1s;
+ }
+ 
+ @keyframes star8 {
+     to {
+         top: 99%;
+         left: 60%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(10) {
+     top: -5%;
+     left: 100%;
+     animation-name: star10;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .4s;
+ }
+ 
+ @keyframes star10 {
+     to {
+         top: 99%;
+         left: 55%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(11) {
+     top: -5%;
+     left: 90%;
+     animation-name: star11;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .1s;
+ }
+ 
+ @keyframes star11 {
+     to {
+         top: 99%;
+         left: 10%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(12) {
+     top: -5%;
+     left: 80%;
+     animation-name: star12;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .5;
+ }
+ 
+ @keyframes star12 {
+     to {
+         top: 99%;
+         left: -10%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(13) {
+     top: -5%;
+     left: 70%;
+     animation-name: star13;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .5;
+ }
+ 
+ @keyframes star13 {
+     to {
+         top: 99%;
+         left: -20%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(14) {
+     top: -5%;
+     left: 60%;
+     animation-name: star14;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .1s;
+ }
+ 
+ @keyframes star14 {
+     to {
+         top: 99%;
+         left: -30%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(15) {
+     top: -5%;
+     left: 50%;
+     animation-name: star15;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .5;
+ }
+ 
+ @keyframes star15 {
+     to {
+         top: 99%;
+         left: -40%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(16) {
+     top: -5%;
+     left: 40%;
+     animation-name: star16;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .3s;
+ }
+ 
+ @keyframes star16 {
+     to {
+         top: 99%;
+         left: -50%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(17) {
+     top: -5%;
+     left: 30%;
+     animation-name: star17;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .9;
+ }
+ 
+ @keyframes star17 {
+     to {
+         top: 99%;
+         left: -60%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(18) {
+     top: -5%;
+     left: 20%;
+     animation-name: star18;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .5s;
+ }
+ 
+ @keyframes star18 {
+     to {
+         top: 99%;
+         left: -70%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(19) {
+     top: -5%;
+     left: 10%;
+     animation-name: star18;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .3;
+ }
+ 
+ @keyframes star19 {
+     to {
+         top: 99%;
+         left: -80%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .stars .star:nth-child(20) {
+     top: -5%;
+     left: 5%;
+     animation-name: star20;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 1px #fff;
+     animation-delay: .1;
+ }
+ 
+ @keyframes star20 {
+     to {
+         top: 99%;
+         left: -90%;
+         width: 0px;
+         height: 0px;
+     }
+ }
+ 
+ .main a {
+     text-decoration: none;
+     font-size: 20px;
+     padding: 10px;
+     border-radius: 20px;
+     background: black;
+     color: yellow;
+     border: 2px solid #fff;
+     position: absolute;
+     top: 90%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     animation: share 0s ease 20s;
+     animation-fill-mode: forwards;
+     visibility: hidden;
+     z-index: 10;
+ }
+ 
+ @keyframes share {
+     to {
+         visibility: inherit;
+     }
+ }
